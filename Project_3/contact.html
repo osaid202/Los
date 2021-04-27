@@ -1,0 +1,76 @@
+<!--
+    Name:
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width">" -->
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script src="formValidate.js"></script>
+ <title>Contact</title>
+</head>
+
+<body>
+    <div id="container">
+        <header id="header">
+            <h1>Los Pollos Hermanos fried chicken</h1>
+            <img src="images/LPH_logo.jpg" alt="logo">
+            <nav id="mainNav">
+                <a href="index.html">HOME</a>
+                <a href="products.html">PRODUCTS</a>
+                <a href="contact.html">CONTACT</a>
+            </nav>
+        </header>
+
+        <h1>Contact us:</h1>
+        <form id="contactForm" method="GET" action="index.html">
+            <fieldset>
+                <h2>Please fill below form and we will reply as soon as possible.</h2>
+                <ul>
+                    <li>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+                        <p class="error" id="name_error">* Required field</p>
+                    </li>
+                    <li>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone">
+                        <p class="error" id="phone_error">* Please enter a 10 digit phone number.</p>
+                    </li>
+                    <li>
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email">
+                        <p class="error" id="email_error">* Please enter a valid email address.</p>
+                    </li>
+                    <li>
+                        <label for="comments">Comments:</label>
+                        <textarea name="comments" id="comments" cols="30" rows="3"></textarea>
+                    </li>
+                    <li>
+                        <button type="submit" id="submit">Submit</button>
+                        <button type="reset" id="reset">Reset</button>
+                    </li>
+                                     
+                </ul>
+            </fieldset>
+        </form>
+
+        <footer id="footer">
+            <nav id="footerNav">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="#">RSS</a>
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+                <a href="#">Site Map</a>            
+                <a href="contact.html">Contact</a>
+                <p>Copyright &copy; 2011 <a href="#">Los Pollos Hermanos</a></p>
+                <p id="address">99 Crystal street, Albuquerque, NY 10024-5192 <a id="map" href="#">Map</a></p>
+            </nav>
+        </footer>
+    </div>
+</body>
+
+</html>
